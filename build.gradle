@@ -1,0 +1,29 @@
+/*
+ * Forked from: https://github.com/jbertram/spring-boot-customized-activemq-artemis
+ * This project uses @Incubating APIs which are subject to change.
+ */
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'maven-publish'
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-artemis:2.7.6'
+    implementation 'org.apache.activemq:artemis-jms-server:2.19.1'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+description = 'spring-boot-customized-activemq-artemis'
+
+application {
+    // Define the main class for the application.
+    mainClass = 'hello.Application'
+}

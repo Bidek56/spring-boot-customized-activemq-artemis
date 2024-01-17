@@ -29,7 +29,7 @@ public class Application {
 	}
 
 	@JmsListener(destination = "my-queue-1")
-	public void listen(String in) {
-		System.out.println(in);
+	public void listen(final String in) {
+		System.out.printf("Msg: %s\n", in);
 	}
 }
