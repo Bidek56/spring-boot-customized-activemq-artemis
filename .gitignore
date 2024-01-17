@@ -3,8 +3,6 @@ target/
 build/
 gradle/
 .gradle
-*.class
-*.jar
 *.bat
 gradlew
 mq-data/
